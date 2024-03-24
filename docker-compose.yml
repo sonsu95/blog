@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  template:
-    container_name: "next-nextui"
+  blog:
+    container_name: "sonsu-blog"
     build:
       context: ./
       target: develop-stage
@@ -12,5 +12,5 @@ services:
     environment:
       - NODE_ENV=${NODE_ENV}
     volumes:
-      - ./:/home/template
-      - /home/template/node_modules
+      - ./:/home/blog
+      - /home/blog/node_modules
