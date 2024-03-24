@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  template:
+    container_name: "next-nextui"
+    build:
+      context: ./
+      target: develop-stage
+      dockerfile: dev.Dockerfile
+    ports:
+      - ${APP_PORT:-3000}:3000
+    environment:
+      - NODE_ENV=${NODE_ENV}
+    volumes:
+      - ./:/home/template
+      - /home/template/node_modules
