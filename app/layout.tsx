@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} flex justify-center`}>
-        <div className="flex min-h-screen w-[56.25rem] flex-col items-center">
+        <div className="flex min-h-screen w-[43.75rem] flex-col items-center">
           <Header />
           <main className="flex-grow">
             <Providers>{children}</Providers>
