@@ -24,6 +24,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'import/no-mutable-exports': 'off',
     'react/no-unescaped-entities': 'off',
+    'react/require-default-props': 'off',
     'prettier/prettier': ['error'],
   },
   settings: {
