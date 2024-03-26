@@ -3,13 +3,13 @@
 interface HeroIconWrapperProps {
   IconComponent: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   iconProps: React.SVGProps<SVGSVGElement>;
-  onPress?: (e: React.MouseEvent) => void;
+  onPress?: (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => void;
 }
 
 function HeroIconWrapper({
   IconComponent,
-  iconProps,
-  onPress,
+  iconProps = {},
+  onPress = () => {},
 }: HeroIconWrapperProps) {
   return <IconComponent {...iconProps} onClick={onPress} />;
 }
