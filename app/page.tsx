@@ -1,3 +1,9 @@
+import PostCard from '@/app/_components/PostCard';
+
 export default function Home() {
-  return <div>메인페이지 입니다.</div>;
+  return (
+    <div>
+      <PostCard />
+    </div>
+  );
 }
