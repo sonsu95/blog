@@ -91,13 +91,13 @@ export default function HeaderNavMenuItem({ title, icon, path }: Props) {
       <button
         type="button"
         onClick={handleClick}
-        className="flex flex-col items-center gap-y-2 text-neutral-600"
+        className=" flex flex-col items-center gap-y-2 text-neutral-600"
       >
         <HeroIconWrapper
           IconComponent={icon}
           iconProps={{ className: 'h-4 h-4' }}
         />
-        <div className="text-xs">{title}</div>
+        <div className="text-matterhorn text-xs">{title}</div>
       </button>
     </>
   );
