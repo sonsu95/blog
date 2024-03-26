@@ -12,6 +12,8 @@ const config: Config = {
     extend: {
       colors: {
         nero: '#222222',
+        matterhorn: '#555555',
+        novel: '#999999',
       },
     },
   },
