@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply text-matterhorn;
+    }
+    p {
+        @apply text-sm mb-6 leading-7;
+    }
+}
